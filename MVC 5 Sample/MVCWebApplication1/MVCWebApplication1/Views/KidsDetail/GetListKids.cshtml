@@ -1,0 +1,10 @@
+﻿@using MVCWebApplication1.Models
+@model MVCWebApplication1.Models.KidsDetail 
+@{
+    ViewBag.Title = "Kids";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>@Model.Name</h2>
+<h2>@(((KidsDetail)ViewData["kids"]).Name )</h2>
+<h2>@ViewBag</h2>
